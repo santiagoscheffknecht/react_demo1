@@ -1,10 +1,11 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Square from './components/XMasMapContainer';
 
 function App() {
   return (
     <div className="App">
-    <div className='bg-green-400'>hello</div> 
+      <Square></Square>
     </div>
   );
 }

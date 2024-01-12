@@ -1,0 +1,7 @@
+.transparent-square {
+    width: 200px; 
+    height: 200px; 
+    background-color: transparent;
+    border: 2px solid white; 
+  }
+  
