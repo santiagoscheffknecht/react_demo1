@@ -1,0 +1,12 @@
+.listPart {
+    height: 30px;
+    width: 269px;
+    background-color: aquamarine;
+    transition: background-color 1.0s, color 1.0s;
+    cursor: pointer
+}
+
+.listPart:hover {
+    background-color: aqua;
+    color: gray;
+}

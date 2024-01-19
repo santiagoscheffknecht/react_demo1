@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Square from './components/XMasMapContainer';
+import ListPartContainer from './componentsCard/listPartContainer';
 
 function App() {
   return (
     <div className="App">
-      <Square></Square>
+      <ListPartContainer />
     </div>
   );
 }
