@@ -3,7 +3,7 @@ import './listPart.css'
 
 export default function listPart(hero) {
     return (
-        <div class="listPart">
+        <div className="listPart">
             <h1>{hero.name}</h1>
         </div>
     )

@@ -4,7 +4,7 @@ import PCard from './PCard'
 export default function PCardContainer() {
     return (
         <div>
-            <PCard name='Dieter' info1='BigMan' />
+            <PCard name='Christoffer' info1='Klaus' />
         </div>
     )
 }
