@@ -1,6 +1,7 @@
-.Card {
+.PCard {
     height: 100px;
     width: 70px;
     border-color: black;
     border-radius: 2px;
+    background: red;
 }
