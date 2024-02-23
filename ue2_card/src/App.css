@@ -1,3 +1,7 @@
 .bg {
   background-color: blue;
 }
+
+.flex {
+  display: flex;
+}

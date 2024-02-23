@@ -1,7 +1,19 @@
 .PCard {
     height: 100px;
-    width: 70px;
     border-color: black;
     border-radius: 2px;
     background: red;
+    border-style: solid;
+    width: 100%;
+}
+
+.Picture {
+    width: 100px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.Picture img {
+    width: 100%;
+    height: auto;
 }
