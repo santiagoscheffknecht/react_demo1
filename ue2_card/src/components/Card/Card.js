@@ -7,10 +7,7 @@ export default function Card(info) {
                 <h1>{info.name}</h1>
                 <h2>{info.title}</h2>
             </div>
-
-            <div class='Picture'>
-                <img src={info.imageUri} alt='Picture' />
-            </div>
+            <img className={styles.Picture} src={info.imageUri} alt='Picture' />
         </div>
     )
 }
