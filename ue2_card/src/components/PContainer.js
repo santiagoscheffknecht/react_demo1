@@ -1,21 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Card from './Card/Card.js'
 
 export default function PContainer() {
+    const [people, setPeople] = useState([]);
+    useEffect(() => {
+        fetch("https://65e1dc63a8583365b3177bf4.mockapi.io/People").then(
+            (res) =>
+                res.json().then((data) => {
+                    console.log(data);
+                    setPeople(data)
+                })
+        );
+    }, []);
     return (
         <div>
             <h1>
                 People
             </h1>
             <div className='flex'>
-                <Card name="Hans" title="CEO" imageUri="https://www.laut.de/News/Gzuz-Was-Hast-Du-Gedacht-auf-dem-Index-09-04-2020-16893/gzuz-hast-du-gedacht-auf-dem-index-208428.jpg" />
-                <Card name="Hans" title="CEO" imageUri="https://www.laut.de/News/Gzuz-Was-Hast-Du-Gedacht-auf-dem-Index-09-04-2020-16893/gzuz-hast-du-gedacht-auf-dem-index-208428.jpg" />
-                <Card name="Hans" title="CEO" imageUri="https://www.laut.de/News/Gzuz-Was-Hast-Du-Gedacht-auf-dem-Index-09-04-2020-16893/gzuz-hast-du-gedacht-auf-dem-index-208428.jpg" />
-                <Card name="Hans" title="CEO" imageUri="https://www.laut.de/News/Gzuz-Was-Hast-Du-Gedacht-auf-dem-Index-09-04-2020-16893/gzuz-hast-du-gedacht-auf-dem-index-208428.jpg" />
-                <Card name="Hans" title="CEO" imageUri="https://www.laut.de/News/Gzuz-Was-Hast-Du-Gedacht-auf-dem-Index-09-04-2020-16893/gzuz-hast-du-gedacht-auf-dem-index-208428.jpg" />
-                <Card name="Hans" title="CEO" imageUri="https://www.laut.de/News/Gzuz-Was-Hast-Du-Gedacht-auf-dem-Index-09-04-2020-16893/gzuz-hast-du-gedacht-auf-dem-index-208428.jpg" />
-                <Card name="Hans" title="CEO" imageUri="https://www.laut.de/News/Gzuz-Was-Hast-Du-Gedacht-auf-dem-Index-09-04-2020-16893/gzuz-hast-du-gedacht-auf-dem-index-208428.jpg" />
-                <Card name="Hans" title="CEO" imageUri="https://www.laut.de/News/Gzuz-Was-Hast-Du-Gedacht-auf-dem-Index-09-04-2020-16893/gzuz-hast-du-gedacht-auf-dem-index-208428.jpg" />
+                {people.map(people => {
+                    return <Card name={people.name} imageUri={people.avatar} titel={people.pet}></Card>
+                })}
             </div>
         </div>
     )
