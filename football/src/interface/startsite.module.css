@@ -1,0 +1,24 @@
+.top {
+    font-size: 1.25rem;
+    background-color: #ED2939;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cage {
+    height: 60%;
+    width: 50%;
+    background: gold;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+.image {
+    height: 500px;
+}
