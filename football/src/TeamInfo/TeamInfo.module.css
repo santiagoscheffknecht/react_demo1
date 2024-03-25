@@ -1,0 +1,56 @@
+.outer {
+    margin-left: 33%;
+}
+
+.margin50 {
+    margin-left: 50%;
+}
+
+body {
+    background-image: url('./13Österreichhintergrund.png');
+    background-size: cover;
+}
+
+.infos {
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    margin-right: 30px;
+}
+
+#backButton {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background-color: #ED2939;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+    /* This value may need adjustment based on your design */
+}
+
+.bg-r {
+    background-color: #ED2939;
+}
+
+.h-28 {
+    height: 7rem;
+    /* This value may need adjustment based on your design */
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}

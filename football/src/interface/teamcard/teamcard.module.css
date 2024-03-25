@@ -1,0 +1,12 @@
+ .card {
+     height: 50px;
+     width: 50px;
+
+
+ }
+
+ .Picture {
+     height: 50px;
+     width: 50px;
+     cursor: pointer;
+ }

@@ -1,11 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
 import Starsite from './interface/startsite.js';
+import TeamInfo from './TeamInfo/TeamInfo.js';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Starsite />,
+  },
+  {
+    path: "/TeamCard",
+    element: <TeamInfo />,
+  },
+]);
 function App() {
   return (
-    <div className="App">
-      <Starsite />
-    </div>
+    <RouterProvider router={router} />
   );
 }
 
