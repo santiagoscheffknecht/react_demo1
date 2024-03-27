@@ -1,56 +1,18 @@
-.outer {
-    margin-left: 33%;
-}
-
-.margin50 {
-    margin-left: 50%;
-}
-
-body {
-    background-image: url('./13Österreichhintergrund.png');
-    background-size: cover;
-}
-
-.infos {
-    position: relative;
-    text-align: center;
-    font-size: 20px;
-    margin-right: 30px;
-}
-
-#backButton {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    padding: 10px;
-    background-color: #ED2939;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.text-xl {
+.top {
     font-size: 1.25rem;
-    /* This value may need adjustment based on your design */
-}
-
-.bg-r {
     background-color: #ED2939;
-}
-
-.h-28 {
-    height: 7rem;
-    /* This value may need adjustment based on your design */
-}
-
-.flex {
+    height: 15%;
     display: flex;
-}
-
-.justify-center {
     justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.items-center {
-    align-items: center;
+.backgroundImage {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    /* oder die gewünschte Höhe */
 }

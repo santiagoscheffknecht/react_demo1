@@ -12,7 +12,7 @@ const router = createBrowserRouter([
     element: <Starsite />,
   },
   {
-    path: "/TeamCard",
+    path: "/t",
     element: <TeamInfo />,
   },
 ]);
