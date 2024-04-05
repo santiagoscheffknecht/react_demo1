@@ -13,7 +13,6 @@ export default function StarSite() {
         console.log(data);
         setTeams(data);
       })
-      .catch(error => console.error('Error fetching teams:', error));
   }, []);
 
   return (

@@ -3,19 +3,13 @@ import style from './teamcard.module.css';
 
 export default function TeamCard({ id, imageUri }) {
     const handleClick = async () => {
-        try {
-            const response = await fetch("https://api.openligadb.de/getbltable/%C3%B6bl1/2023");
-            const data = await response.json();
-            const team = data.find(team => team.teamIconUrl === imageUri);
+        const response = await fetch("https://api.openligadb.de/getbltable/%C3%B6bl1/2023");
+        const data = await response.json();
+        const team = data.find(team => team.teamIconUrl === imageUri);
 
-            if (team) {
-                const url = `t?id=${team.teamInfoId}`;
-                window.location.href = url;
-            } else {
-                console.log("Team nicht gefunden");
-            }
-        } catch (error) {
-            console.error("Fehler beim Abrufen der Daten:", error);
+        if (team) {
+            const url = `t?id=${team.teamInfoId}`;
+            window.location.href = url;
         }
     };
 

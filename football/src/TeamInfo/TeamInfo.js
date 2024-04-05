@@ -19,11 +19,9 @@ export default function StarSite() {
                     if (team) {
                         setTeamName(team.teamName);
                         setTeamInfo(team);
-                    } else {
-                        console.log("Team not found!");
+
                     }
                 })
-                .catch(error => console.error('Error fetching team data:', error));
         };
 
         getTeamInfo();
